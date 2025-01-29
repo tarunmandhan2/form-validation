@@ -1,3 +1,4 @@
+import Form from "./Form";
 import "./styles.css";
 
 export default function App() {
@@ -8,6 +9,7 @@ export default function App() {
         Problem: Build a reusable form component that handles form state and
         validation for various form fields.
       </h4>
+      <Form />
     </div>
   );
 }
