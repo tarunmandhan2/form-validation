@@ -20,7 +20,7 @@ const Form = () => {
     const error = {};
     if (!val.uname) {
       error.uname = "Username is invalid";
-    } else if (!/\S{3}\@gmail.\S{2}/.test(val.email)) {
+    } else if (val?.email?.length && !/\S{3}\@gmail.\S{2}/.test(val.email)) {
       error.email = "Email is invalid";
     }
     return error;
